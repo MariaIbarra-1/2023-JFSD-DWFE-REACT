@@ -1,0 +1,19 @@
+import luzGatito from "../imagenes/Luz-gatito.jpg"
+import luzHeladera from "../imagenes/luz-heladera.jpg"
+import sensorEnchufe from "../imagenes/sensor-enchufe.jpg"
+import bateriaRecargable from "../imagenes/bateria-gel-recargable.jpg"
+import cableExterior from "../imagenes/cable-exterior.jpg"
+import fotocelula from "../imagenes/fotocelula.jpg"
+
+const products = [
+    {id: "dlsklklao75", nombre: "Luz led con diseño original y sensor de movimiento", precio: 75, categoria: "Luces", imagen: luzGatito, descripcion: "Con un diseño muy diferente a las luces con sensor de movimiento a las que estamos acostumbrados, este dispositivo se enciende automáticamente cuando detecta una presencia a tres metros y se apaga por sí misma transcurridos 30 segundos. Dispone de dos modos de brillo y tres de iluminación. La carga se completa en dos horas y se extiende por 150 horas más. Puede colgarse, ir en un soporte o pegarse mediante imán."},
+    {id: "dl87u7o8hju", nombre: "Dos lámparas led con ángulo de apertura de 90 grados", precio: 150, categoria: "Luces", imagen: luzHeladera, descripcion: "Con un tamaño de 26 centímetros de largo por tan solo 2,6 cm de ancho, este par de luces con sensor de movimiento son ideales para colocarse encima de roperos o en el hueco de la campana de la cocina. Dispone de 20 leds y proporcionan 120 lúmenes de luz fría. Su diseño magnético en la parte de atrás las hace muy fáciles de instalar."},
+    {id: "po67hg98b5y", nombre: "Sensor de movimiento deleyCON para enchufes", precio: 150, categoria: "Sensores", imagen: sensorEnchufe, descripcion: "Cuenta con un alcance de 9 metros y 120 grados, y se puede ajustar la sensibilidad de detección para evitar que se active con la mascota de casa. Es muy fácil de instalar y manejar. Cuenta con protección IP20 y su consumo de energía es de unos 0,52W en espera y 0,49 W en funcionamiento."},
+    {id: "o6iumo8p98y", nombre: "Bateria Gel Recargable Atomlux 6v 4,2ah", precio: 150, categoria: "Baterias", imagen: bateriaRecargable, descripcion: "Apta para balanzas comerciales, alarmas, luces de emergencia, etc... Medidas: 100 x 70 x 45 mm. Las baterías de gel tienen baja autodescarga, pueden llegar a estar 6 meses sin utilizarse conservando el 80% de su carga. Incluso pueden permanecer 2 años almacenadas manteniendo el 60% de su carga."},
+    {id: "ngh43bh8iup", nombre: "Cable UTP categoría 5 exterior", precio: 150, categoria: "Cables", imagen: cableExterior, descripcion: "Cable UTP de 4 pares con vaina exterior de PVC color blanco,se encuentra construído en alambre rojo de cobre sólido de Ø 0,50 mm., aislado en polietileno de alta densidad, conformado por cuatro pares trenzados sin blindar. El uso de pares trenzados permite bajar los costos de la instalación no solo por que se pueden aprovechar pares existentes sino que también por el menor costo de este tipo cables respecto de un cable coaxil. Además este método ofrece ventajas prácticas ya que se pueden enviar varias cámaras por un cable multipar sin interferencia entre ellas. Facilitando la instalación y mejorando la estética. Además los empalmes son mucho más sencillos y económicos."},
+    {id: "ngh43bh8iup", nombre: "Fotocelula Electronica 1000w Led Smart Con Relays- Prontoluz", precio: 150, categoria: "Sensores", imagen: fotocelula, descripcion: "Permite encender/apagar aparatos de iluminación en función de un nivel de luminosidad ambiental preestablecido. Posee función de retardo a la intervención en el encendido y en el apagado, para evitar acciones inesperadas como rayos, vehículos en movimiento, etc. Ideal para control de iluminación de carteles, vidrieras, estacionamientos, toldos, etc."},
+]
+
+export {
+    products
+}
