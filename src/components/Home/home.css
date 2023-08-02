@@ -1,0 +1,100 @@
+.home-content{
+    display: inline-block;
+    position: relative;
+    background-color: aqua;
+    width: 100%;
+    height: 60vh !important;
+    overflow: hidden;
+}
+
+.home-image{
+    display: block;
+    object-fit: cover;
+    width: 100%;
+    height: 60vh;
+    -webkit-animation: zoom 15s infinite ease-in-out;
+    animation: zoom 15s infinite ease-in-out;
+}
+
+.home-title{
+    position: absolute;
+    right: 2rem;
+    bottom: 8rem;
+    font-weight: 900;
+    font-size: 3rem;
+    color: rgb(255, 255, 255);
+    background-color: rgba(0, 0, 0, 0.438)
+}
+
+.btn-shop {
+    position: absolute;
+    bottom: 2rem;
+    right: 2rem;
+    background-color: #6B2479;
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.25rem;
+    font-weight: bold;
+    padding: 13px 30px;
+    border-radius: 32px;
+    z-index: 1;
+    overflow: hidden;
+}
+
+.btn-shop:hover {
+    color: var(--dark-brown);
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 0px 16px;
+}
+
+.btn-shop::after {
+    content: "";
+    background: #EF494C;
+    position: absolute;
+    z-index: -1;
+    padding: 0.85em 0.75em;
+    display: block;
+}
+  
+.btn-shop::after {
+    transition: all 0.35s;
+}
+
+.btn-shop:hover::after {
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    transition: all 0.35s;
+}
+
+.slide-from-left::after {
+    top: 0;
+    bottom: 0;
+    left: -100%;
+    right: 100%;
+}
+
+.delay-3 {
+    -webkit-animation-delay: 1200ms;
+    -moz-animation-delay: 1200ms;
+    animation-delay: 1200ms;
+}
+
+.mapa-contenido{
+    width: 80%;
+    margin: 2rem auto;
+}
+
+@keyframes zoom {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.1);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}

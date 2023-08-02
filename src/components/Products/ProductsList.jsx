@@ -7,14 +7,12 @@ const ProductsList = ({productos}) => {
   const [productosFiltrados, setProductosFiltrados] = useState(productos)
 
   useEffect(() => {
+    //por cada vez que se cambie el filtro, realizo el filtro
     const productosFiltrados = productos.filter(producto => producto.nombre.toLowerCase().includes(filtro))
       setProductosFiltrados(productosFiltrados)
   }, [filtro])
   
-  const handleSearch = (e) => {
-    e.preventDefault()
-    setFiltro(e.target.value.toLowerCase())
-  } 
+  
   
   return (
     <div>
@@ -25,7 +23,7 @@ const ProductsList = ({productos}) => {
                 type="search" 
                 id="buscador" 
                 placeholder="Ingrese producto que desea buscar..." 
-                onChange={handleSearch}
+                onChange={(e) => setFiltro(e.target.value.toLowerCase())} //registro el filtro
           />
         </div>
         

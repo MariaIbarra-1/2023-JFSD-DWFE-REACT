@@ -35,7 +35,7 @@ const Contact = () => {
         <h2 className="font-black text-3xl text-center text-violet-900 mt-8 mb-8"> Contactanos</h2>
       
         <form className="bg-white shadow-md rounded-lg py-10 px-5 mb-10" onSubmit={handleSubmit}>
-            {error && 
+            {error && //pregunto si hay error para llamar el componente error
                 <Error> 
                     <p>Todos los campos son obligatorios</p> 
                 </Error>}
@@ -87,7 +87,7 @@ const Contact = () => {
             />
             </form>
         </div>
-        {respuesta && (
+        {respuesta && ( //pregunto si respuesta es verdadero para mostrar la respuesta
         <div className="md:w-1/2 mx-5 text-center">
                 <img className=" mt-4" src={imagenResp} alt="" />
                 <h2 className="font-black text-2xl text-center text-violet-900"> Gracias por su consulta.</h2>
