@@ -1,4 +1,4 @@
-import imagen from "../../imagenes/Not Found/404notfound.svg"
+import imagen from "../../imagenes/Not Found/404-Error-animal-amico.svg"
 import "./notFound.css"
 
 const NotFound = () => {

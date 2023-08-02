@@ -108,7 +108,7 @@ body {
   }
   
   .card_content::-webkit-scrollbar {
-    width: 8px;
+    width: 6px;
   }
   
   .card_content::-webkit-scrollbar-track {
