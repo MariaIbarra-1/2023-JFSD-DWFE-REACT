@@ -5,6 +5,7 @@ import NotFound from "./components/NotFound/NotFound"
 import ProductsList from "./components/Products/ProductsList"
 import { RouterProvider, createBrowserRouter } from "react-router-dom"
 import { products } from "./data/data.js"
+//import NavBar from "./components/nav/nav"
 
 
 const rutas=([

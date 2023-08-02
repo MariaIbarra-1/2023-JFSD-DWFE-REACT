@@ -1,0 +1,24 @@
+body {
+    font-family: "Lato", sans-serif;
+}
+  
+.otro-nombre{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.titulo-notFound{
+    font-weight: 900;
+    font-size: 30px;
+    text-align: center;
+    color:darkslateblue;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.imagen-centrada{
+    text-align: center;
+}
+.imagen-notFound{
+    width: 600px;
+}

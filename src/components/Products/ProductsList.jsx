@@ -1,13 +1,37 @@
+import { useState, useEffect } from "react"
 import Product from "./Product"
 
 const ProductsList = ({productos}) => {
 
-    
+  const [filtro, setFiltro] = useState("")
+  const [productosFiltrados, setProductosFiltrados] = useState(productos)
+
+  useEffect(() => {
+    const productosFiltrados = productos.filter(producto => producto.nombre.toLowerCase().includes(filtro))
+      setProductosFiltrados(productosFiltrados)
+  }, [filtro])
+  
+  const handleSearch = (e) => {
+    e.preventDefault()
+    setFiltro(e.target.value.toLowerCase())
+  } 
+  
   return (
     <div>
       <div className="main-product">
+        <div className=" text-center">
+          <label htmlFor="buscador"></label>
+          <input className="border-2 w-3/4 p-2 mt-8 placeholder-gray-400 rounded-md" 
+                type="search" 
+                id="buscador" 
+                placeholder="Ingrese producto que desea buscar..." 
+                onChange={handleSearch}
+          />
+        </div>
+        
+        <h2 className="titulo-producto">Nuestros Productos</h2>
           <ul className="cards">
-            {productos.map(producto => (
+            {productosFiltrados.map(producto => (
                 <Product key={producto.id} producto={producto} />
             ))}
           </ul>
