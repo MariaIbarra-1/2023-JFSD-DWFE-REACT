@@ -10,7 +10,7 @@ const Home = () => {
       </div>
 
       <h2 className="font-black text-3xl text-center text-violet-900 mt-8 mb-8">Nuestra Ubicación</h2>
-      <p className="text-lg mb-3 text-center">Nuestro estableciomiento está ubicado en el corazon de la ciudad</p>
+      <p className="text-lg mb-3 text-center">Nuestro establecimiento está ubicado en el corazón de la ciudad</p>
       <div className="mapa-contenido">
         <iframe 
           src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d1252.7398822420892!2d-55.89513904475764!3d-27.366861402074967!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses!2sar!4v1691006004788!5m2!1ses!2sar"
